@@ -1,33 +1,33 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: "./src/app.js",
   output: {
-    path: path.resolve(__dirname, 'dist/assets'),
-    filename: 'bundle.js'
+    path: path.resolve(__dirname, "dist/assets"),
+    filename: "bundle.js",
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
-    publicPath: '/assets/'
+    contentBase: path.resolve(__dirname, "dist"),
+    publicPath: "/assets",
   },
   module: {
-    rules: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      use: {
-        loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env']
-        }
-      }
-    },
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
+      },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
-      
-    }
-    ]
-  }
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
 };
 /*
 This is where we configure the rules for our modules.
@@ -38,5 +38,4 @@ style-loader
   Adds the CSS to the HTML document
 npm serve
   Starts our web server
-
   */
