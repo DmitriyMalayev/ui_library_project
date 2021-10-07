@@ -1,8 +1,5 @@
 {
-  "name": "chapter_19",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "build": "node_modules/.bin/webpack --mode production",
     "serve": "webpack-dev-server --mode development"
@@ -14,7 +11,7 @@
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "babel-loader": "^8.0.5",
-    "css-loader": "^2.1.0",
+    "css-loader": "^2.1.1",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
