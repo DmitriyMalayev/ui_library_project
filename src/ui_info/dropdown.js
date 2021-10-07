@@ -8,8 +8,9 @@ class Dropdown {
   }
   init(){
     this.trigger.addEventListener('click', () => {
-      this.trigger.classList.toggle('active');
+      this.trigger.classList.toggle('active'); 
       this.content.classList.toggle('active');
+      // Toggle
     });
   }
 }

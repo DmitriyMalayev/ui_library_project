@@ -5,11 +5,11 @@ import Tabs from "./ui_info/tabs";
 const tooltip = new Tooltip(document.querySelector(".tooltip")); // create tooltip
 tooltip.init();
 
-const dropdowns = document.querySelectorAll(".dropdown"); // create dropdowns
+const dropdowns = document.querySelectorAll(".dropdown"); // select all dropdown classes 
 
-dropdowns.forEach((dropdown) => {
-  const instance = new Dropdown(dropdown);
-  instance.init();
+dropdowns.forEach((dropdown) => {  
+  const instance = new Dropdown(dropdown); //new instance for each dropdown.
+  instance.init();  //setup the constructor and initialize a drop down for each dropdown
 });
 
 // create tabs
