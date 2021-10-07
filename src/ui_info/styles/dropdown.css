@@ -5,7 +5,8 @@
   cursor: pointer;
 }
 .dropdown .trigger::after{
-  content: ">";
+  /* Goes from "^" to "v"  */
+  content: ">";    
   display: inline-block;
   position: absolute;
   right: 15px;
