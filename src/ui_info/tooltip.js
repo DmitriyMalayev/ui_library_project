@@ -1,12 +1,12 @@
 import "./styles/tooltip.css";
-"/"
-
 class Tooltip {
   constructor(element) {
     this.element = element;
     this.message = element.getAttribute("data-message");
+    //This is the attribute which was added to the span element in index.html
   }
   init() {
+    // initializes the Tooltip component
     const tip = document.createElement("div");
     tip.classList.add("tip");
     tip.textContent = this.message;
@@ -22,3 +22,7 @@ class Tooltip {
 }
 
 export { Tooltip as default };
+  
+  // mouseenter fires when the mouse is over the tooltip
+  // mouseleave fires when the mouse is out of the tooltip
+  

@@ -1,4 +1,5 @@
 .tooltip {
+  /* This is the span tag  */
   position: relative;
   display: inline-block;
   color: #ff6565;
@@ -6,6 +7,7 @@
   cursor: help;
 }
 .tip {
+  /* This is the div with text for the tooltip, it's initially hidden */
   visibility: hidden;
   width: 150px;
   background-color: #ff6565;
